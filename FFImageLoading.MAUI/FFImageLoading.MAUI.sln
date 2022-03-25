@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32314.265
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.MAUI", "FFImageLoading.MAUI\FFImageLoading.MAUI.csproj", "{D2B23D62-4ECB-4971-89D0-698B5F9AFD25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.Droid", "..\FFImageLoading.Droid\FFImageLoading.Droid.csproj", "{D1915A00-5E00-42E9-A1CE-12F2D73AF4B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Shared", "..\FFImageLoading.Shared\FFImageLoading.Shared.csproj", "{A818CA2C-D620-4387-B5F8-BC606D6F57DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFImageLoading.Mock", "..\FFImageLoading.Mock\FFImageLoading.Mock.csproj", "{7110EA42-7941-46B9-971C-DF085D420985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFImageLoading.MAUI.Sample", "..\FFImageLoading.MAUI.Sample\FFImageLoading.MAUI.Sample.csproj", "{182DBD42-5632-4CD3-9017-ACB56611A9B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2B23D62-4ECB-4971-89D0-698B5F9AFD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B23D62-4ECB-4971-89D0-698B5F9AFD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B23D62-4ECB-4971-89D0-698B5F9AFD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B23D62-4ECB-4971-89D0-698B5F9AFD25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1915A00-5E00-42E9-A1CE-12F2D73AF4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1915A00-5E00-42E9-A1CE-12F2D73AF4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1915A00-5E00-42E9-A1CE-12F2D73AF4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1915A00-5E00-42E9-A1CE-12F2D73AF4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A818CA2C-D620-4387-B5F8-BC606D6F57DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A818CA2C-D620-4387-B5F8-BC606D6F57DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A818CA2C-D620-4387-B5F8-BC606D6F57DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A818CA2C-D620-4387-B5F8-BC606D6F57DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7110EA42-7941-46B9-971C-DF085D420985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7110EA42-7941-46B9-971C-DF085D420985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7110EA42-7941-46B9-971C-DF085D420985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7110EA42-7941-46B9-971C-DF085D420985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182DBD42-5632-4CD3-9017-ACB56611A9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182DBD42-5632-4CD3-9017-ACB56611A9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182DBD42-5632-4CD3-9017-ACB56611A9B0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{182DBD42-5632-4CD3-9017-ACB56611A9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182DBD42-5632-4CD3-9017-ACB56611A9B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182DBD42-5632-4CD3-9017-ACB56611A9B0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D39187F-AD0D-4710-8163-E9EAFC79A09B}
+	EndGlobalSection
+EndGlobal

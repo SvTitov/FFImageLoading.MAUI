@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1915A00-5E00-42E9-A1CE-12F2D73AF4B7}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FFImageLoading.Droid</RootNamespace>
+    <AssemblyName>FFImageLoading.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ANDROID;__ANDROID__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\ImageCache.cs" />
+    <Compile Include="Helpers\Utils.cs" />
+    <Compile Include="Cache\IImageCache.cs" />
+    <Compile Include="Views\ImageViewAsync.cs" />
+    <Compile Include="Work\BitmapHolder.cs" />
+    <Compile Include="Transformations\TransformationBase.cs" />
+    <Compile Include="Extensions\UnitsExtensions.cs" />
+    <Compile Include="Cache\ReuseBitmapDrawableCache.cs" />
+    <Compile Include="Drawables\SelfDisposingBitmapDrawable.cs" />
+    <Compile Include="Drawables\FFBitmapDrawable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\MainThreadDispatcher.cs" />
+    <Compile Include="Extensions\ExifExtensions.cs" />
+    <Compile Include="Helpers\PlatformPerformance.cs" />
+    <Compile Include="Extensions\ColorExtensions.cs" />
+    <Compile Include="Targets\ImageViewTarget.cs" />
+    <Compile Include="Targets\BitmapTarget.cs" />
+    <Compile Include="DataResolvers\BundleDataResolver.cs" />
+    <Compile Include="DataResolvers\ResourceDataResolver.cs" />
+    <Compile Include="DataResolvers\FileDataResolver.cs" />
+    <Compile Include="Work\PlatformImageLoadingTask.cs" />
+    <Compile Include="DataResolvers\DataResolverFactory.cs" />
+    <Compile Include="Drawables\ISelfDisposingBitmapDrawable.cs" />
+    <Compile Include="Drawables\SelfDisposingTransitionDrawable.cs" />
+    <Compile Include="Extensions\DrawableExtensions.cs" />
+    <Compile Include="Cache\ByteBoundStrongLruCache.cs" />
+    <Compile Include="Cache\LRUCache.cs" />
+    <Compile Include="Cache\IByteSizeAware.cs" />
+    <Compile Include="Cache\StrongCache.cs" />
+    <Compile Include="Drawables\FFAnimatedDrawable.cs" />
+    <Compile Include="ImageService.cs" />
+    <Compile Include="..\FFImageLoading.Mock\Extensions\TaskParameterExtensions.cs">
+      <Link>Extensions\TaskParameterExtensions.cs</Link>
+    </Compile>
+    <Compile Include="Extensions\TaskParameterPlatformExtensions.cs" />
+    <Compile Include="Decoders\GifDecoder.cs" />
+    <Compile Include="Decoders\BaseDecoder.cs" />
+    <Compile Include="Helpers\HighResolutionTimer.cs" />
+    <Compile Include="Drawables\ISelfDisposingAnimatedBitmapDrawable.cs" />
+    <Compile Include="Targets\ViewTarget.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FFImageLoading.Shared\FFImageLoading.Shared.csproj">
+      <Project>{a818ca2c-d620-4387-b5f8-bc606d6f57de}</Project>
+      <Name>FFImageLoading.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
