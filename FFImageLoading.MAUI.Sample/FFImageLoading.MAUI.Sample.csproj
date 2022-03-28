@@ -56,7 +56,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\guitar.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <ProjectReference Include="..\FFImageLoading.MAUI\FFImageLoading.MAUI\FFImageLoading.MAUI.csproj" />
+	  <ProjectReference Include="..\SVG\FFImageLoading.Svg.MAUI\FFImageLoading.Svg.MAUI.csproj" />
 	</ItemGroup>
 
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">

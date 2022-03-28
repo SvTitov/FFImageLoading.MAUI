@@ -38,7 +38,7 @@ namespace FFImageLoading.Work
             UserCustomCacheKey = userCustomCacheKey;
         }
 
-        internal void SetType(ImageType type)
+        public void SetType(ImageType type)
         {
             Type = type;
         }
